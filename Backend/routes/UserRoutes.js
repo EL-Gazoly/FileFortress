@@ -16,7 +16,7 @@ UserRouter.post("/logout", (req, res, next) => {
     }
     return res.json('Okay you are loged out now, see you later i guess :(')
   });
- 
+  
 });
 
 module.exports = UserRouter
