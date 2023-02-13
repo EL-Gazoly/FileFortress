@@ -1,8 +1,8 @@
 const uploadRouter = require('express').Router()
 const upload = require('../config/multer')
 const uploadFile = require('../controller/uploadController')
-
-uploadRouter.post('/file' ,upload.array('file'),async(req,res, next) => {
+const isAuth = require('../middlewares/checkAuth')
+uploadRouter.post('/file' , isAuth ,upload.array('file'), async(req,res, next) => {
     await uploadFile(req,res)
 })
 
