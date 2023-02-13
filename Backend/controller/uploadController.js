@@ -8,15 +8,13 @@ const uploadFile = (req, res) => {
             path: file.path,
             type: file.mimetype,
             size: file.size,
-            ownerId: file.encoding,
+            ownerId: req.user.id,
             FolderId: file.destination
         }) 
          .then((file) => {
-            console.log(file);
             res.status(200).json({msg: 'files uploaded'});
         })
           .catch((e) => {
-            console.log(e);
             res.status(400);
         });
 
