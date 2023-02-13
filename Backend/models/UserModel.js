@@ -42,6 +42,10 @@ const User = sequelize.define(
          LockedUntil:{
             type: DataTypes.DATE,
          },
+         passwordRetry:{
+            type: DataTypes.INTEGER,
+            defaultValue: 0
+         },
          usage:{
             type: DataTypes.INTEGER,
             defaultValue: 0,
