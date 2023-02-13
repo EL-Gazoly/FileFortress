@@ -1,4 +1,5 @@
 const User = require('../models/UserModel')
+const passport = require('passport')
 const { generatePassword} = require('../config/password')
 const Register = (req, res, next)=> {
     User.findOne({
@@ -18,12 +19,31 @@ const Register = (req, res, next)=> {
                 salt: salt,
             })
             .then((user)=>{
-                return console.log(user)
-                next()
+                return console.log('Ok' ,user.id)
             })
+            next()
         }
     })
 
 }
+const Login = (req, res, next) => {
+passport.authenticate('local', function(err, user, info){
+    if( err ){
+        res.status(404).json(err)
+    }
+    if( !user ){
+        res.status(401).json(info)
+    }
+    req.logIn(user, function (err) {
+        if ( err ){
+            return next(err)
+        }
+        return next()
+    })
+})(req, res, next)
+}
 
-module.exports = Register
+module.exports = {
+    Register, 
+    Login
+}
