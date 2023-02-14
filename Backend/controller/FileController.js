@@ -40,7 +40,7 @@ const  deleteFiles = (req, res, next) => {
             res.status(200).json({msg : 'file deleted successfully'})
         }
         else {
-            res.status(400).json({msg : 'file cannot be found'})
+            res.status(404).json({msg : 'file cannot be found'})
         }
     })
     .catch((err) => {console.error(err); res.status(403).msg('You cannot delete this file'); })
