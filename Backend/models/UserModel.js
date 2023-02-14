@@ -54,6 +54,15 @@ const User = sequelize.define(
 
     }
 )
+User.afterCreate(async (user, options) => {
+    const Folder = require('./FolderModel')
+    await Folder.create({
+        name : 'MyFortress',
+        ownerId: user.id,
+        isHome: true
+    })
+})
+
 User.sync()
 
 module.exports = User
