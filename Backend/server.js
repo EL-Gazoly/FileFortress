@@ -20,7 +20,7 @@ app.use(passport.session())
 //Application routes
 app.use('/api/upload/', require('./routes/uploadRouter'))
 app.use('/api/user/', require('./routes/UserRoutes'))
-
+app.use('/api/folder/', require('./routes/FolderRoutes'))
 
 
 //server port
