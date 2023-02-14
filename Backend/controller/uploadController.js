@@ -9,7 +9,7 @@ const uploadFile = (req, res) => {
             type: file.mimetype,
             size: file.size,
             ownerId: req.user.id,
-            FolderId: file.destination
+            FolderId: req.body.FolderId
         }) 
          .then((file) => {
             res.status(200).json({msg: 'files uploaded'});
@@ -18,7 +18,7 @@ const uploadFile = (req, res) => {
             res.status(400);
         });
 
-    });
+    }); 
 }
 
 module.exports = uploadFile
