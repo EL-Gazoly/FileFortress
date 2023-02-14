@@ -34,7 +34,41 @@ const createFolder = (req, res, next) => {
     res.status(500)
  })   
 }
-
+const deleteFolders = (req, res, next) => {
+    Folder.findAll({
+        where : {
+            [Op.and] : [
+                {id : req.body.id},
+                {ownerId: req.user.id}
+            ]
+        }
+    })
+    .then((folders) => {
+        flag = false
+        if (folders){
+        folders.forEach((folder) => {
+            if (folder.isHome){
+                flag = true
+            }
+            else{
+                folder.destroy()
+            }
+        }
+        )
+        if (flag){
+            res.status(400).json({msg: 'You cannot remove the main folder'})
+        }
+        else {
+        res.status(200).json({msg : 'Folders have been delted'})
+        }
+    }
+    else {
+        res.status(404).json({msg : 'Folder cannot be found'})
+    }
+    })
+    .catch((err) => {console.error(err);res.status(500).json({msg : 'You cannot delete those folders'})})
+}
 module.exports = {
     createFolder,
+    deleteFolders
 }
