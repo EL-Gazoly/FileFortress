@@ -3,12 +3,17 @@ const LocalStrategy = require('passport-local')
 const User = require('../models/UserModel')
 const {validatePassword} = require('./password')
 const moment = require('moment')
-const { where } = require('sequelize')
-const passportIntialize = () => {
+const { Op } = require('sequelize')
+
 const passportConfig = (email, password, next) => {
     User.findOne(
         {
-            where : { email : email}
+            where : {
+                [Op.and] : [
+                    {email : email},
+                    {LoginStrategy : 'local'}
+                ]
+            }
         }
     )
     .then((user)=>{
@@ -87,5 +92,4 @@ passport.deserializeUser((id, done) => {
         done(null, user)
     })
 })
-}
-module.exports = passportIntialize
+
