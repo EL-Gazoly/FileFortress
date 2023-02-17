@@ -1,9 +1,16 @@
 const User = require('../models/UserModel')
 const passport = require('passport')
 const { generatePassword} = require('../config/password')
+const {Op} = require('sequelize')
+const { uuid } = require('uuidv4')
 const Register = (req, res, next)=> {
     User.findOne({
-        where: {email: req.body.email}      
+        where: {
+            [Op.and] : [
+                {email : req.body.email},
+                {LoginStrategy : 'local'}
+            ]
+        }      
     })
     .then((user)=>{
         if (user){
@@ -13,10 +20,12 @@ const Register = (req, res, next)=> {
         else{
             const {salt, hash} = generatePassword(req.body.password)
             User.create({
+                id : uuid(),
                 name: req.body.name,
                 email : req.body.email,
                 hash: hash, 
                 salt: salt,
+                LoginStrategy : 'local'
             })
             .then((user)=>{
                 return console.log('Ok' ,user.id)
