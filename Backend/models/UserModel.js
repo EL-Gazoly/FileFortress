@@ -4,8 +4,8 @@ const User = sequelize.define(
     'User',
     {
         id:{
-            type: DataTypes.UUID,
-            defaultValue: UUIDV4,
+            type: DataTypes.STRING,
+            allowNul : false,
             primaryKey: true
         },
         name: {
@@ -29,11 +29,9 @@ const User = sequelize.define(
         }, 
         hash:{
             type: DataTypes.STRING,
-            allowNull: false
         },
          salt:{
             type: DataTypes.STRING,
-            allowNul: false
          },
          isLocked:{
             type: DataTypes.BOOLEAN,
@@ -49,6 +47,10 @@ const User = sequelize.define(
          usage:{
             type: DataTypes.INTEGER,
             defaultValue: 0,
+            allowNul: false
+         },
+         LoginStrategy : {
+            type: DataTypes.STRING,
             allowNul: false
          }
 
