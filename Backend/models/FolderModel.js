@@ -14,7 +14,7 @@ const Folder = sequelize.define(
 
         },
         ownerId:{
-            type: DataTypes.UUID,
+            type: DataTypes.STRING,
             allowNull: false
         },
         isHome:{
