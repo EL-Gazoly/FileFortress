@@ -8,36 +8,31 @@ passport.use( new FacebookStrategy({
     callbackURL : '/api/auth/facebook/callback',
     profileFields: ['id', 'displayName', 'email']
 },
-function(accessToken,refreshToken, profile, cb ) {
+function(accessToken, refreshToken, profile, cb) {
     User.findOne({
-        where : {
-            [Op.and] : [
-                {id : profile.id},
-                {LoginStrategy : 'facebook'}
-            ]
-        }
-    })
-    .then((user) => {
-        if (user){
-            return cb(null, user)
-        }
-        else {
-            
-            User.create({
-                id : profile.id,
-                name : profile.displayName,
-                email : profile.emails[0].value,
-                LoginStrategy: profile.provider
-            })
-            .then(user => {
-                return cb(null ,user)
-            })
-            .catch(err => cb(err))
-        }
-    })
-    .catch(error => {
-        return cb(error)
-    })
-    console.log(profile);
-}
+      where: {
+        [Op.and]: [
+          { id: profile.id },
+          { LoginStrategy: profile.provider }
+        ]
+      }
+    }).then(user => {
+      if (user) {
+        return cb(null, user);
+      } else {
+        User.create({
+          id: profile.id,
+          name: profile.displayName,
+          email: profile.emails[0].value,
+          LoginStrategy: profile.provider
+        }).then(createdUser => {
+          return cb(null, createdUser);
+        }).catch(error => {
+          return cb(error);
+        });
+      }
+    }).catch(error => {
+      return cb(error);
+    });
+  }
 ))
