@@ -10,9 +10,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 
-require('./config/passport')
 require('./config/Google')
+require('./config/Github')
 require('./config/Facebook')
+require('./config/passport')
 
 app.use(session)
 app.use(passport.initialize())
@@ -22,6 +23,7 @@ app.use(passport.session())
 app.use('/api/file/', require('./routes/FileRouter'))
 app.use('/api/user/', require('./routes/UserRoutes'))
 app.use('/api/folder/', require('./routes/FolderRoutes'))
+app.use('/api/auth/github/', require('./routes/GithubRouter'))
 app.use('/api/auth/google/' , require('./routes/GoogleRoutes'))
 app.use('/api/auth/facebook/', require('./routes/FacebookRouter'))
 
