@@ -6,7 +6,8 @@ File Fortress is a cloud storage application that allows you to securely store, 
 - - - -
 
 ## Key Features
-* User authentication with Passport Local, Passport google, and Passport Facebbok.
+* User authentication with Passport Local, Passport google, Passport Facebbok, and Passport Github.
+* User can login normally with email , with google, with facebook, or with github
 * Ability to upload and store files securely.
 * User-friendly interface for managing files
 * Retrieval of stored files from anywhere in the world.
