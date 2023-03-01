@@ -1,5 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Dashboard.css'
+import { Link } from 'react-router-dom'
 import logo from '../../assets/logo.svg'
 import Trash from '../../assets/trashLogo.svg'
 import MenuItem from '../../components/MenuItem'
@@ -17,6 +18,11 @@ const MenuItemList = [
 ]
 
 const Dashboard = () => {
+  const [selecteed , setSelected] = useState('item0')
+  const handelClick = (item) => {
+    setSelected(item)
+    console.log(item)
+  }
   return (
     <div>
         <div className="dashboard-container">
@@ -28,10 +34,10 @@ const Dashboard = () => {
                 </button>
                 <div className="menu-list">
                   {MenuItemList.map((item, index) => (
-                    <div key={index}>
+                    <Link key={index} to={item.path} className={selecteed === `item${index}`? 'selected-item' : ''} onClick={()=> handelClick(`item${index}`)}>
                       
-                    <MenuItem name={item.sname} logo={item.logo}  path={item.path} />
-                    </div>
+                    <MenuItem name={item.sname} logo={item.logo}/>
+                    </Link>
                   ))} 
                 </div>
                 </div>

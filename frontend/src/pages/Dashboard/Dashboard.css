@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+html{
+    font-family: 'Tilt Warp', sans-serif;
+}
 .dashboard-container {
     width: 100vw;
     height: 100vh;
@@ -24,7 +28,11 @@
     display: flex;
     background-color: #F5F5F5;
 }
-
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #C1BEBE;
+}
 .dashboard-left-list{
     width: 255px;
     height: 857px;
@@ -73,6 +81,8 @@
 .item-right {
     max-width: 99px;
     min-width: 38px;
+
+    cursor: pointer;
 
 }
 
@@ -126,4 +136,24 @@
     font-size: 12px;
 
     align-self: flex-start;
+}
+.selected-item{
+    position: relative;
+    font-family: 'Tilt Warp', sans-serif;
+    color: white;
+    font-size: 18px;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.selected-item::before{
+    content: "         ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #F5F5F5;
+    border-radius: 0 4px 4px 0;
+    
 }
