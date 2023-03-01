@@ -29,9 +29,9 @@ const Dashboard = () => {
           <div className="dashboard-left">
               <div className="dashboard-left-list">
                 <div className="dashboard-left-list-top">
-                     <button className="logo">
+                     <Link className="logo" to='/'>
                     <img src={logo} alt="logo" />                  
-                </button>
+                </Link>
                 <div className="menu-list">
                   {MenuItemList.map((item, index) => (
                     <Link key={index} to={item.path} className={selecteed === `item${index}`? 'selected-item' : ''} onClick={()=> handelClick(`item${index}`)}>

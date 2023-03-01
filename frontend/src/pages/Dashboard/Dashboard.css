@@ -2,6 +2,11 @@
 html{
     font-family: 'Tilt Warp', sans-serif;
 }
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 .dashboard-container {
     width: 100vw;
     height: 100vh;
@@ -20,10 +25,10 @@ html{
 }
 
 .dashboard-right{
-    flex: 1; /* this will make the div take all the remaining space */
+    flex: 1; /*this will make the div take all the remaining space */   
     position: relative;
-    left: -50px;
-    border-radius: 55px;
+    margin-left: -50px; /* use margin instead of position */
+    border-radius: 55px 0px 0px 55px;
     height: 100vh;
     display: flex;
     background-color: #F5F5F5;
@@ -31,6 +36,7 @@ html{
 a{
     text-decoration: none;
     cursor: pointer;
+    caret-color: transparent;
     color: #C1BEBE;
 }
 .dashboard-left-list{
@@ -52,8 +58,9 @@ a{
     justify-content: space-between;
 }
 
-.dashboard-left-list button{
-    all: unset; 
+.logo{
+    all: unset  ;
+    caret-color: transparent; /* this will remove the caret from the input */ /* caret is the line that appears when you click on an input */
     cursor: pointer;
     margin-top: 42px;
 }
@@ -142,7 +149,7 @@ a{
     font-family: 'Tilt Warp', sans-serif;
     color: white;
     font-size: 18px;
-    margin-left: 10px;
+    
     padding-left: 10px;
 }
 
