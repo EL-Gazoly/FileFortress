@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../assets/logo.svg'
-import Trash from '../assets/trashLogo.svg'
-import MenuItem from './MenuItem'
-import Logout from '../assets/logoutLogo.svg'
-import cloudLogo from '../assets/cloudLogo.svg'
-import Starred from '../assets/startredLogo.svg'
-import ProgressBar from './ProgressBar'
-import whiteCloudLogo from '../assets/whiteCloudLogo.svg'
+import './DashboardLeft.css'
+import logo from '../../assets/logo.svg'
+import Trash from '../../assets/trashLogo.svg'
+import MenuItem from '../MenuItem'
+import Logout from '../../assets/logoutLogo.svg'
+import cloudLogo from '../../assets/cloudLogo.svg'
+import Starred from '../../assets/startredLogo.svg'
+import ProgressBar from '../ProgressBar'
+import whiteCloudLogo from '../../assets/whiteCloudLogo.svg'
 
 const MenuItemList = [
     {sname: 'Fortress' , logo: cloudLogo , path: '/dashboard'},
