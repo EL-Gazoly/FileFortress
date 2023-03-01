@@ -15,11 +15,6 @@ const ProgressBar = ({used}) => {
         backgroundColor: "#F8B849",
         borderRadius: 'inherit',
       }
-      const labelStyles = {
-        padding: 5,
-        color: 'white',
-        fontWeight: 'bold'
-      }
     
 
   return (

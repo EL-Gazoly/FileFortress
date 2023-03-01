@@ -154,7 +154,7 @@ a{
 }
 
 .selected-item::before{
-    content: "         ";
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -164,3 +164,4 @@ a{
     border-radius: 0 4px 4px 0;
     
 }
+
