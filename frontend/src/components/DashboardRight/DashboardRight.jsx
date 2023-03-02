@@ -3,7 +3,7 @@ import './DashboardRight.css'
 import searchLogo from '../../assets/searchLogo.svg'
 import uploadLogo from '../../assets/uploadLogo.svg'
 import personUpload from '../../assets/personUpload.svg'
-// import helpLogo from '../../assets/helpLogo.svg'
+import sideArrow from '../../assets/sideArrow.svg'
 const DashboardRight = () => {
   const searchRef = useRef(null)
   const handelSearchClick = () => {
@@ -54,6 +54,16 @@ const DashboardRight = () => {
         </div>
         <div className="dashboard-right-third-row-left-side">
           <img src={personUpload} alt="person" />
+        </div>
+      </div>
+
+      <div className="dashboard-right-fourth-row">
+        <div className="dashboard-right-fourth-row-title">
+          Folders
+        </div>
+        <div className="dashboard-right-fourth-row-left-side">
+          <p>view all</p>
+          <img src={sideArrow} alt="arrow" />
         </div>
       </div>
     </div>
