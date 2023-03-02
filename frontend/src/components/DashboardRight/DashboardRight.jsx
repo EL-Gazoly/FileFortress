@@ -2,6 +2,7 @@ import React, {useRef} from 'react'
 import './DashboardRight.css'
 import searchLogo from '../../assets/searchLogo.svg'
 import uploadLogo from '../../assets/uploadLogo.svg'
+import personUpload from '../../assets/personUpload.svg'
 // import helpLogo from '../../assets/helpLogo.svg'
 const DashboardRight = () => {
   const searchRef = useRef(null)
@@ -40,6 +41,20 @@ const DashboardRight = () => {
                   <p>Upload File</p>
                   <img src={uploadLogo} alt="upload" />
              </button>
+      </div>
+
+      <div className="dashboard-right-third-row">
+        <div className="dashboard-right-third-row-right-side">
+          <div className="dashboard-right-third-row-right-side-title">
+          Welcome back Someone
+          </div>
+          <div className="dashboard-right-third-row-right-side-subtitle">
+          Unleash the Power of Your Data with seamless cloud storage Integration it’s secure scalable, and hassle-free  
+          </div>
+        </div>
+        <div className="dashboard-right-third-row-left-side">
+          <img src={personUpload} alt="person" />
+        </div>
       </div>
     </div>
   )
