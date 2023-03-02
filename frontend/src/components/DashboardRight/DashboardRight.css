@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Ubuntu&display=swap');
+html{
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Tilt Neon', sans-serif;
+}
 .dashboard-right-container{
     width: 1367px;
     height: 100%;
@@ -94,3 +99,52 @@
     width: 78px;
         
 }
+.dashboard-right-second-row{
+    width: 1383px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 38px;
+}
+
+.dashboard-right-second-row-title{
+    width: 140px;
+    height: 35px;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 28px;
+    line-height: 42px;
+
+    color: #323539;
+}
+
+.dashboard-right-second-row-button{
+    width: 167px;
+    height: 47px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: #6672FB;
+    
+    border: none;
+    border-radius: 15px;
+
+    margin-right: 147px;
+}
+
+.dashboard-right-second-row-button p{
+    width: 117.19px;
+    height: 24.54px;
+
+    font-family: 'Tilt Neon', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 26px;
+
+    color: #ffffff;
+}   
