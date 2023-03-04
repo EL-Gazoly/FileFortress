@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Ubuntu:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 html{
     font-family: 'Ubuntu', sans-serif;
     font-family: 'Tilt Neon', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .dashboard-right-container{
     width: 1367px;
@@ -254,4 +256,116 @@ html{
 
 .dashboard-right-fourth-row-left-side img{
     margin-top: 6px;
+}
+
+.dashboard-right-fifth-row{
+    width: 1291.8px;
+    height: 170px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 9px;
+
+}
+
+.folder-card-container{
+    width: 211px;
+    height: 170px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    background-color: #E8523F;
+    border-radius: 30px;
+    color: white;
+}
+
+.folder-logo-container{
+    width: 30px;
+    height: 31px;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+
+    background-color: #F27664;
+}
+
+.folder-card-top{
+    width: 194px;
+    height: 64px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: space-between;
+}
+.folder-card-first-row{
+    width: 167px;
+    height: 39px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.folder-card-second-row{
+    width: 196px;
+    height: 14px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-family: 'Tanseek Modern Pro Arabic';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height:  34px;
+
+    padding-left: 29px;
+    margin-top: 9px;
+}
+.folder-card-bottom{
+    width: 138px;
+    height: 35px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.folder-card-third-row,
+.folder-card-fourth-row{
+    height: 15px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.folder-card-third-row{
+    width: 65px;
+    margin-right: 108px;    
+}
+.folder-card-fourth-row{
+    width: 139px;
+    margin-right: 34px;
+}
+.folder-card-third-row p,
+.folder-card-fourth-row p{
+    font-family: 'Tanseek Modern Pro Arabic';
+    padding-left: 2px;
+    font-size: 15px;
 }

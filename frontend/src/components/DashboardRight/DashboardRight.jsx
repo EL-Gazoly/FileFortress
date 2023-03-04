@@ -4,6 +4,8 @@ import searchLogo from '../../assets/searchLogo.svg'
 import uploadLogo from '../../assets/uploadLogo.svg'
 import personUpload from '../../assets/personUpload.svg'
 import sideArrow from '../../assets/sideArrow.svg'
+
+import FolderCard from '../FolderCard'
 const DashboardRight = () => {
   const searchRef = useRef(null)
   const handelSearchClick = () => {
@@ -65,6 +67,14 @@ const DashboardRight = () => {
           <p>view all</p>
           <img src={sideArrow} alt="arrow" />
         </div>
+      </div>
+    
+      <div className="dashboard-right-fifth-row">
+        <FolderCard />
+        <FolderCard />
+        <FolderCard />
+        <FolderCard />
+        <FolderCard />
       </div>
     </div>
   )
