@@ -1,0 +1,154 @@
+.landing-page-container{
+    width: 1277px;
+    height: 706px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.landing-page-header{
+    width: 1542px;
+    height: 84px;
+
+    margin-top: 40px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.landing-page-header-right{
+    width: 306px;
+    height: 100%;
+
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+.landing-page-header-left{
+    width: 415px;
+    height: 49px;
+
+    margin-right: 75px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between; 
+}   
+.landing-page-header-left a{
+    color: #03045E;
+
+    font-family: 'Popins', sans-serif;
+    font-style: normal;
+    font-weight:400;
+    font-size: 16;
+}
+
+.login-button{
+    width: 115px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    
+    padding: 10px 31px;
+
+    background-color: #03045E;
+    border-radius: 5px;
+    border: none;
+    
+    font-family: 'Popins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #FFFFFF; 
+}
+
+.landing-page-body{
+    width: 105%;
+    height: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.landing-page-body-left{
+    width: 585px;
+    height: 322px;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    margin-bottom: 59px;
+}
+
+.landing-page-body-title{
+    width: 556px;
+    height: 136px;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 68px;
+
+    color: #03045E;
+
+    flex: none; /* it prevents the element from growing or shrinking */  
+    order: 0; /* this is the order in which the element will appear */
+
+}
+
+.landing-page-body-subtitle{
+    width: 556px;
+    height: 52px;
+    
+    font-family: 'Popins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: rgba(3, 4, 94, 0.5);
+
+    flex: none;
+    
+}
+
+.signup-button{
+    width: 140px;
+    height: 62px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding: 17px 38px;
+
+    gap: 10px;
+
+    background-color: #0098FF;
+    border: none;
+    border-radius: 5px;
+
+    font-family: 'Popins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+
+    letter-spacing: 0.75px;
+
+    color: #FFFFFF;
+
+}
