@@ -1,25 +1,13 @@
 import './Landing.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
-import fileFortressLogo from '../../assets/fileFortressLogo.svg'
+import Header from '../../components/Header'
 import landingPageLogo from '../../assets/landingPageLogo.svg'
 const Landing = () => {
   return (
     <div className='container'>
         <div className="landing-page-container">
-            <div className="landing-page-header">
-                <div className="landing-page-header-right">
-                    <img src={fileFortressLogo} alt="File Fortress Logo" />
-                </div>
-                <div className="landing-page-header-left">
-                    <Link to="#" className='about-us'>About Us</Link>
-                    <Link to="#" className='searvice'>Searvice</Link>
-                    <Link to="#" className='sign-up-button'>Contact Us</Link>
-                    <Link to="/login">
-                        <button className='login-button'>Login</button>
-                    </Link>
-                </div>
-            </div>
+            <Header buttonName={`Login`} />
             <div className="landing-page-body">
                 <div className="landing-page-body-left">
                     <div className="landing-page-body-title">

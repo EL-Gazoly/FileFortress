@@ -17,7 +17,68 @@ a{
     
     color: #C1BEBE;
 }
+.page-header{
+  width: 1542px;
+  height: 84px;
 
+  margin-top: 40px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page-header-right{
+  width: 306px;
+  height: 100%;
+
+  cursor: pointer;
+}
+button{
+  cursor: pointer;
+}
+.page-header-left{
+  width: 415px;
+  height: 49px;
+
+  margin-right: 75px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between; 
+}   
+.page-header-left a{
+  color: #03045E;
+
+  font-family: 'Popins', sans-serif;
+  font-style: normal;
+  font-weight:400;
+  font-size: 16;
+}
+
+.login-button{
+  width: 115px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  
+  padding: 10px 31px;
+
+  background-color: #03045E;
+  border-radius: 5px;
+  border: none;
+  
+  font-family: 'Popins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #FFFFFF; 
+}
 ::-webkit-scrollbar {
     width: 20px;
   }
