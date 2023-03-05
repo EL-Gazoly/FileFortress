@@ -13,6 +13,7 @@ html{
     
     caret-color: transparent;
 
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -206,7 +207,8 @@ html{
     margin-right: 147px ;
 }
 
-.dashboard-right-fourth-row{
+.dashboard-right-fourth-row,
+.dashborad-right-sixth-row{
     width: 1375px;
     height: 36px;
 
@@ -216,7 +218,8 @@ html{
     justify-content: space-between;
 }
 
-.dashboard-right-fourth-row-title{
+.dashboard-right-fourth-row-title,
+.dashborad-right-sixth-row p {
     width: 104px;
     height: 36px;
 
@@ -262,10 +265,8 @@ html{
     width: 1291.8px;
     height: 170px;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
     margin-top: 9px;
 
@@ -369,3 +370,111 @@ html{
     padding-left: 2px;
     font-size: 15px;
 }
+
+.dashborad-right-sixth-row{
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+.dashborad-right-sixth-row p{
+    width: 170px;
+}   
+
+.dashboard-right-seventh-row{
+    width: 890px;
+    max-height: 182px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+ 
+
+    margin-top: 9px;    
+      
+}
+.file-card-container{
+    width: 100%;
+    height: 42px;
+
+    margin-right: 412px;
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    scroll-snap-align: start;   
+}
+
+.file-card-side-left{
+    width: 266px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.file-icon{
+    width: 43px;
+    height: 42px;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #E8523F;
+    color: white;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.file-name{
+    width: 207px;
+    height: 32px;
+
+    font-family: 'Tanseek Modern Pro Arabic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+
+    color: #848484; 
+}
+
+.file-card-side-right{
+    width: 201px;
+    height: 22px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.file-created-date,
+.file-size{
+    width: 62px;
+    height: 22px;
+
+    font-family: 'Tanseek Modern Pro Arabic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+
+    color: #848484;
+}
+
+.file-size{
+    width: 40px;
+}
+

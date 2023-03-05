@@ -6,6 +6,7 @@ import personUpload from '../../assets/personUpload.svg'
 import sideArrow from '../../assets/sideArrow.svg'
 
 import FolderCard from '../FolderCard'
+import FileCard from '../FileCard'
 const DashboardRight = () => {
   const searchRef = useRef(null)
   const handelSearchClick = () => {
@@ -71,10 +72,18 @@ const DashboardRight = () => {
     
       <div className="dashboard-right-fifth-row">
         <FolderCard />
-        <FolderCard />
-        <FolderCard />
-        <FolderCard />
-        <FolderCard />
+        <FolderCard /> 
+        <FolderCard /> 
+        <FolderCard /> 
+      </div>
+      <div className="dashborad-right-sixth-row">
+        <p>Recent Files</p>
+      </div>
+      <div className="dashboard-right-seventh-row">
+        <FileCard />
+        <FileCard />
+        <FileCard />
+        <FileCard />
       </div>
     </div>
   )
