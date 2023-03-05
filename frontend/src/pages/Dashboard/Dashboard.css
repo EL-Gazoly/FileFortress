@@ -6,16 +6,6 @@ html{
     margin: 0px;
     padding: 0px;
 }
-
-.dashboard-container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-
-    overflow-y: auto;
-
-}
-
 .dashboard-left{
     width: 372px;
     height: 100vh;

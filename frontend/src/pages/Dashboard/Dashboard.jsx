@@ -7,7 +7,7 @@ const Dashboard = () => {
 
   return (
     <div>
-        <div className="dashboard-container">
+        <div className="container">
           <div className="dashboard-left">
               <DashboardLeft used={25}/>
           </div>
