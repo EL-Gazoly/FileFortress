@@ -11,6 +11,9 @@ html{
     width: 100vw;
     height: 100vh;
     display: flex;
+
+    overflow-y: auto;
+
 }
 
 .dashboard-left{
@@ -22,6 +25,9 @@ html{
 
     background-color: #121432;
     color: #C1BEBE;
+
+    overflow-y: auto;
+
 }
 
 .dashboard-right{
@@ -32,6 +38,9 @@ html{
     height: 100vh;
     display: flex;
     background-color: #F5F5F5;
+
+    overflow-y: auto;
+
 }
 a{
     text-decoration: none;
@@ -39,3 +48,20 @@ a{
     caret-color: transparent;
     color: #C1BEBE;
 }
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
