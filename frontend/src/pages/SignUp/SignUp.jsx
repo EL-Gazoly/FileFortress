@@ -2,6 +2,8 @@ import './SignUp.css'
 import React from 'react'
 import signUpIcon from '../../assets/signUpIcon.svg'
 import nameInputFieldIcon from '../../assets/nameInputFieldIcon.svg'
+import emailInputFieldIcon from '../../assets/emailInputFieldIcon.svg'
+import passwordInputFieldIcon from '../../assets/passwordInputFieldIcon.svg'
 import Header from '../../components/Header'
 
 const SignUp = () => {
@@ -42,15 +44,17 @@ const SignUp = () => {
                         </div>
                       </div>
                       <div className="signup-page-body-right-fourth-row">
-                        <label htmlFor="email"></label>
+                        <label htmlFor="email">Email Address</label>
                         <div className="email-input-field">
-                          <input type="email" name="email" id="email" />
+                          <input type="email" name="email" id="email" placeholder='Your email addreess'/>
+                          <img src={emailInputFieldIcon} alt="email icon" />
                         </div>
                       </div>
                       <div className="signup-page-body-right-fifth-row">
-                        <label htmlFor="password"></label>
+                        <label htmlFor="password">Password</label>
                         <div className="password-input-field">
-                          <input type="password" name="password" id="password" />
+                          <input type="password" name="password" id="password" placeholder='Your password'/>
+                          <img src={passwordInputFieldIcon} alt="password icon" />
                         </div>
                       </div>
                       <div className="signup-page-body-right-sixth-row">
