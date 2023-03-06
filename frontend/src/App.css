@@ -64,8 +64,9 @@ button{
 
   display: flex;
   align-items: center;
+  justify-content: center;
   
-  padding: 10px 31px;
+  padding: 10px 23px;
 
   background-color: #03045E;
   border-radius: 5px;
