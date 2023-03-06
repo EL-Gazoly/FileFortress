@@ -7,7 +7,7 @@ const Landing = () => {
   return (
     <div className='container'>
         <div className="landing-page-container">
-            <Header buttonName={`Sign in`} />
+            <Header />
             <div className="landing-page-body">
                 <div className="landing-page-body-left">
                     <div className="landing-page-body-title">

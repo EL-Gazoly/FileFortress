@@ -19,4 +19,8 @@ const Header = ({buttonName}) => {
   )
 }
 
+Header.defaultProps = {
+  buttonName: 'Sign in'
+}
+
 export default Header
