@@ -50,7 +50,7 @@ html{
 
 .signup-page-body-right-second-row{
     align-items: flex-end;
-    height: 61px;
+    height: 35px;
 }
 
 .signup-page-body-right-second-row p{
@@ -121,9 +121,7 @@ html{
     padding-right: 14px;
 }
 .first-name-input-field input,
-.last-name-input-field input,
-.email-input-field input,
-.password-input-field input{
+.last-name-input-field input{
     flex: 1;
     padding: 16px 20px;
 
@@ -139,10 +137,12 @@ html{
     line-height: 21px;
 }
 .first-name-input-field input:focus,
-.last-name-input-field input:focus,
-.email-input-field input:focus,
-.password-input-field input:focus{
+.last-name-input-field input:focus{
     outline: none;
+    
+    transition: 0.4s;
+    
+    margin-left: 7px;
 }
 
 .first-name-input-field input::placeholder,
@@ -219,5 +219,16 @@ html{
     letter-spacing: 0.3px;
 
     color: #FFFFFF;
+}
+.signup-page-body-right-eighth-row {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
 
+    color: #333745;
+}
+.signup-page-body-right-eighth-row a{
+    color: #03045E;
 }

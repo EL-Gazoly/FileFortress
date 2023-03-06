@@ -89,6 +89,119 @@ button{
     flex-direction: column;
     align-items: center;
 }
+.Sign-options-container{
+  width: 201px;
+  height: 86px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.Sign-options-top{
+  width: 100%;
+  height: 24px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.Sign-options-bottom{
+  width: 100%;
+  height: 48px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.Sign-options-bottom img{
+  cursor: pointer;
+}
+.login-form-email,
+.login-form-password{
+    width: 520px;
+    height: 72px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-form-email label
+.login-form-password label{
+    width: 78px;
+}
+.email-input-field,
+.password-input-field{
+    width: 479px;
+    height: 72px;
+
+    padding: 16px 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    gap: 12px;
+
+    background: #FCFCFC;
+    border: 1px solid #F3F3F3;
+    border-radius: 8px;
+}
+.email-input-field input,
+.password-input-field input{
+    flex: 1;
+    
+    background: #FCFCFC;
+    border: none;
+
+    padding-left: 14px;
+
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+}
+.email-input-field img,
+.password-input-field img{
+    width: 17px;
+    height: 17px;
+}
+.email-input-field input::placeholder,
+.password-input-field input::placeholder{
+  color: #838AA3;
+}
+
+.email-input-field input:focus,
+.password-input-field input:focus{
+    outline: none;
+
+    transition: 0.4s;
+    margin-left: 7px;
+}
+label{
+  width: 59px;
+  height: 15px;
+
+  align-self: flex-start;
+
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #838AA3;
+}
+
+
+
+
 ::-webkit-scrollbar {
     width: 20px;
   }

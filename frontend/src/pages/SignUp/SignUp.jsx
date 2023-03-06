@@ -1,10 +1,13 @@
 import './SignUp.css'
 import React from 'react'
+import { Link } from 'react-router-dom'
+import Header from '../../components/Header'
 import signUpIcon from '../../assets/signUpIcon.svg'
+import SignOptions from '../../components/SignOptions'
 import nameInputFieldIcon from '../../assets/nameInputFieldIcon.svg'
 import emailInputFieldIcon from '../../assets/emailInputFieldIcon.svg'
 import passwordInputFieldIcon from '../../assets/passwordInputFieldIcon.svg'
-import Header from '../../components/Header'
+
 
 const SignUp = () => {
   return (  
@@ -61,15 +64,10 @@ const SignUp = () => {
                         <button className="signup-button">Sign up</button>
                       </div>
                       <div className="signup-page-body-right-seventh-row">
-                        <p>OR</p>
+                        <SignOptions />
                       </div>
                       <div className="signup-page-body-right-eighth-row">
-                        <div className="sign-up-options">
-
-                        </div>
-                      </div>
-                      <div className="signup-page-body-right-ninth-row">
-                        <p>Already have an account? <a href="#">Sign In</a></p> 
+                        <p>Already have an account? <Link to="#">Sign In</Link></p> 
                       </div>
                 </div>
             </div>
