@@ -39,7 +39,7 @@
     font-size: 48px;
     line-height: 68px;
 
-    color: #03045E;
+    color: #22237C;
 
     flex: none; /* it prevents the element from growing or shrinking */  
     order: 0; /* this is the order in which the element will appear */
@@ -75,7 +75,7 @@
 
     gap: 10px;
 
-    background-color: #0098FF;
+    background-color: #03045E;
     border: none;
     border-radius: 5px;
 
