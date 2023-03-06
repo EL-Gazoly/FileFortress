@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+html{
+    font-family: 'Nunito', sans-serif;
+}
+.signup-page-body{
+    width: 1553px;
+    height: 776px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.signup-page-body-left {
+    width: 461px;
+    height: 429px;
+}
+
+.signup-page-body-right {
+    width: 520px;
+    height: 623px   ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signup-page-body-right-firt-row,
+.signup-page-body-right-second-row{
+    width: 520px;
+    height: 67px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.signup-page-body-right-firt-row h1,
+.signup-page-body-right-second-row p{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48.83px;
+    line-height: 67px;
+
+    color: #3F3D56;
+}
+
+.signup-page-body-right-second-row{
+    align-items: flex-end;
+    height: 61px;
+}
+
+.signup-page-body-right-second-row p{
+    width: 412px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #333745;
+}
+
+.signup-page-body-right-third-row{
+    width: 520px;
+    height: 72px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.first-name-input,
+.last-name-input{
+    width: 250px;
+    height: 72px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.first-name-input label,
+.last-name-input label{
+    width: 59px;
+    height: 15px;
+
+    align-self: flex-start;
+
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #838AA3;
+}
+.first-name-input-field,
+.last-name-input-field{
+    width: 250px;
+    height: 53px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    gap: 12px;
+
+    background: #FCFCFC;
+    border: 1px solid #F3F3F3;
+    border-radius: 8px;
+}
+.first-name-input-field img,
+.last-name-input-field img{
+    width: 14px;
+    height: 14px;
+    padding-right: 14px;
+}
+.first-name-input-field input,
+.last-name-input-field input{
+    flex: 1;
+    padding: 16px 20px;
+
+    background: #FCFCFC;
+    border: none;
+
+    padding-left: 14px;
+
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+}
+.first-name-input-field input:focus,
+.last-name-input-field input:focus{
+    outline: none;
+}
+
+.first-name-input-field input::placeholder,
+.last-name-input-field input::placeholder{
+    color: #838AA3;
+}
