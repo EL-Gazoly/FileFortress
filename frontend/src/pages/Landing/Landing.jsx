@@ -6,7 +6,7 @@ import landingPageLogo from '../../assets/landingPageLogo.svg'
 const Landing = () => {
   return (
     <div className='container'>
-        <div className="landing-page-container">
+        <div className="page-container">
             <Header />
             <div className="landing-page-body">
                 <div className="landing-page-body-left">
