@@ -4,9 +4,11 @@ import fileFortressLogo from '../assets/fileFortressLogo.svg'
 const Header = ({buttonName}) => {
   return (
     <div className="page-header">
+      <Link to="/">
         <div className="page-header-right">
             <img src={fileFortressLogo} alt="File Fortress Logo" />
         </div>
+      </Link>
         <div className="page-header-left">
             <Link to="#" className='about-us'>About Us</Link>
             <Link to="#" className='searvice'>Searvice</Link>
