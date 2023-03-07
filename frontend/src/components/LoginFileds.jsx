@@ -2,24 +2,26 @@ import React from 'react'
 import emailInputFieldIcon from '../assets/emailInputFieldIcon.svg'
 import passwordInputFieldIcon from '../assets/passwordInputFieldIcon.svg'
 
-const LoginFileds = () => {
+const LoginFileds = (props) => {
+  console.log(props.emailORPassword)
+  let key = props.emailORPassword === 'email' ? 'email' : 'password'
   return (
     <div>
-           <div className="login-form-email">
-                <label htmlFor="email">Email Address</label>
-                <div className="email-input-field">
-                    <input type="email" name="email" id="email" placeholder='Your email addreess'/>
-                    <img src={emailInputFieldIcon} alt="email icon" />
+   
+           <div className="login-form-input">
+                <label htmlFor="email">
+                  {props.emailORPassword === 'email' ? 'Email Address' : 'Password'}
+                </label>
+                <div className="login-input-field">
+                    <input type={key} 
+                    name={key} 
+                    id={key} 
+                     placeholder={props.emailORPassword === 'email' ? 'Your email address' : 'Your password'} 
+                     />
+                    <img src={props.emailORPassword === 'email' ? emailInputFieldIcon : passwordInputFieldIcon}  alt="icon" />
                 </div>
                 </div>
-                <div className="login-form-password">
-                <label htmlFor="password">Password</label>
-                <div className="password-input-field">
-                    <input type="password" name="password" id="password" placeholder='Your password'/>
-                    <img src={passwordInputFieldIcon} alt="password icon" />
-                </div>
-            </div>
-      
+
     </div>
   )
 }

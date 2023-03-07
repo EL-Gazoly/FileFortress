@@ -97,9 +97,7 @@ html{
     color: #838AA3;
 }
 .first-name-input-field,
-.last-name-input-field,
-.email-input-field,
-.password-input-field{
+.last-name-input-field{
     width: 250px;
     height: 53px;
 
@@ -146,14 +144,11 @@ html{
 }
 
 .first-name-input-field input::placeholder,
-.last-name-input-field input::placeholder,
-.email-input-field input::placeholder,
-.password-input-field input::placeholder{
+.last-name-input-field input::placeholder{
     color: #838AA3;
 }
 
-.signup-page-body-right-fourth-row,
-.signup-page-body-right-fifth-row{
+.login-form-input{
     width: 520px;
     height: 72px;
 
@@ -162,23 +157,10 @@ html{
     justify-content: space-between;
     align-items: center;
 }
-.signup-page-body-right-fourth-row label
-.signup-page-body-right-fifth-row label{
+.login-form-input label{
     width: 78px;
 }
-.email-input-field,
-.password-input-field{
-    width: 479px;
-    height: 72px;
-
-    padding: 16px 20px;
-}
-.email-input-field input,
-.password-input-field input{
-    padding : 0px;
-}
-.email-input-field img,
-.password-input-field img{
+.email-input-field img{
     width: 17px;
     height: 17px;
 }
