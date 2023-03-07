@@ -11,7 +11,6 @@ const Header = ({buttonName}) => {
       </Link>
         <div className="page-header-left">
             <Link to="#" className='about-us'>About Us</Link>
-            <Link to="#" className='searvice'>Service</Link>
             <Link to="#" className='sign-up-button'>Contact Us</Link>
             <Link to={buttonName === 'Sign in' ? '/login' : '/signup'}>
                 <button className='login-button'>{buttonName}</button>
