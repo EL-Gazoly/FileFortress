@@ -18,7 +18,7 @@ const Landing = () => {
                     </div>
 
                     <div className="landing-page-body-button">
-                        <Link to="/dashboard">
+                        <Link to="/signup">
                             <button className='signup-button'>Explore</button>
                         </Link>
                     </div>  
