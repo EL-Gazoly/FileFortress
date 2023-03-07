@@ -2,7 +2,7 @@
 html{
     font-family: 'Nunito', sans-serif;
 }
-.signup-page-body{
+.auth-page-body{
     width: 1553px;
     height: 776px;
 
@@ -12,12 +12,12 @@ html{
     justify-content: space-around;
 }
 
-.signup-page-body-left {
+.auth-page-body-left {
     width: 461px;
     height: 429px;
 }
 
-.signup-page-body-right {
+.auth-page-body-right {
     width: 520px;
     height: 623px   ;
 
@@ -27,8 +27,8 @@ html{
     align-items: center;
 }
 
-.signup-page-body-right-firt-row,
-.signup-page-body-right-second-row{
+.auth-page-body-right-firt-row,
+.auth-page-body-right-second-row{
     width: 520px;
     height: 67px;
 
@@ -37,8 +37,8 @@ html{
     justify-content: center;
     align-items: center;
 }
-.signup-page-body-right-firt-row h1,
-.signup-page-body-right-second-row p{
+.auth-page-body-right-firt-row h1,
+.auth-page-body-right-second-row p{
     font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -48,12 +48,12 @@ html{
     color: #3F3D56;
 }
 
-.signup-page-body-right-second-row{
+.auth-page-body-right-second-row{
     align-items: flex-end;
     height: 35px;
 }
 
-.signup-page-body-right-second-row p{
+.auth-page-body-right-second-row p{
     width: 412px;
 
     font-weight: 400;
@@ -63,7 +63,7 @@ html{
     color: #333745;
 }
 
-.signup-page-body-right-third-row{
+.auth-page-body-right-third-row{
     width: 520px;
     height: 72px;
 
@@ -82,7 +82,7 @@ html{
     justify-content: space-between;
     align-items: center;
 }
-.signup-page-body-right label{
+.auth-page-body-right label{
     width: 59px;
     height: 15px;
 
@@ -165,7 +165,7 @@ html{
     height: 17px;
 }
 
-.signup-page-body-right-sixth-row{
+.auth-page-body-right-sixth-row{
     width: 520px;
     height: 48px;
 
@@ -182,7 +182,7 @@ html{
     border-radius: 8px;
 }
 
-.signup-button{
+.auth-button{
     
     width: 100%;
     height: 100%;
@@ -200,9 +200,14 @@ html{
 
     letter-spacing: 0.3px;
 
+    background-color: #03045E;
+
+    border-radius: 8px;
+    border: none;
+
     color: #FFFFFF;
 }
-.signup-page-body-right-eighth-row {
+.auth-page-body-right-eighth-row {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
@@ -211,6 +216,32 @@ html{
 
     color: #333745;
 }
-.signup-page-body-right-eighth-row a{
+.auth-page-body-right-eighth-row a{
     color: #03045E;
+}
+.forget-password{
+    width: 520px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    cursor: pointer ;
+
+    gap: 10px;
+
+}
+
+.forget-password p{
+    width: 97px;
+    height: 15px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    color:#FF6584;
 }

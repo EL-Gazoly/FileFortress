@@ -3,7 +3,6 @@ import emailInputFieldIcon from '../assets/emailInputFieldIcon.svg'
 import passwordInputFieldIcon from '../assets/passwordInputFieldIcon.svg'
 
 const LoginFileds = (props) => {
-  console.log(props.emailORPassword)
   let key = props.emailORPassword === 'email' ? 'email' : 'password'
   return (
     <div>
