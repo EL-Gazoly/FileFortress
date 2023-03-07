@@ -5,8 +5,6 @@ import Header from '../../components/Header'
 import signUpIcon from '../../assets/signUpIcon.svg'
 import SignOptions from '../../components/SignOptions'
 import nameInputFieldIcon from '../../assets/nameInputFieldIcon.svg'
-import emailInputFieldIcon from '../../assets/emailInputFieldIcon.svg'
-import passwordInputFieldIcon from '../../assets/passwordInputFieldIcon.svg'
 import LoginFileds from '../../components/LoginFileds'
 
 const SignUp = () => {
@@ -49,7 +47,7 @@ const SignUp = () => {
                       <LoginFileds emailORPassword={'email'}/>
 
                       <LoginFileds emailORPassword={'password'}/>
-                      
+
                       <div className="signup-page-body-right-sixth-row">
                         <button className="signup-button">Sign up</button>
                       </div>
