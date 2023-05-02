@@ -1,209 +1,38 @@
-.container {
-    width: 100vw;
-    height: 100vh;
-
-    display: flex;
-    justify-content: center;
-
-    overflow-y: auto;
-
-    caret-color: transparent;   
-
+.App {
+  text-align: center;
 }
 
-a{
-    text-decoration: none;
-    cursor: pointer;
-    
-    color: #C1BEBE;
-}
-.page-header{
-  width: 1542px;
-  height: 84px;
-
-  margin-top: 22px;
-
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.page-header-right{
-  width: 306px;
-  height: 100%;
-
-  cursor: pointer;
-}
-button{
-  cursor: pointer;
-}
-.page-header-left{
-  width: 327px;
-  height: 49px;
-
-  margin-right: 75px;
-
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between; 
-}   
-.page-header-left a{
-  color: #03045E;
-
-  font-family: 'Popins', sans-serif;
-  font-style: normal;
-  font-weight:400;
-  font-size: 16;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-.login-button{
-  width: 115px;
-  height: 46px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  padding: 10px 23px;
-
-  background-color: #03045E;
-  border-radius: 5px;
-  border: none;
-  
-  font-family: 'Popins', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 27px;
-
-  color: #FFFFFF; 
-}
-
-.page-container{
-  width: 1277px;
-    height: 732px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.Sign-options-container{
-  width: 201px;
-  height: 86px;
-  
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-}
-.Sign-options-top{
-  width: 100%;
-  height: 24px;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.Sign-options-bottom{
-  width: 100%;
-  height: 48px;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.Sign-options-bottom img{
-  cursor: pointer;
-}
-.login-form-email,
-.login-form-password{
-    width: 520px;
-    height: 72px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.login-input-field{
-    width: 479px;
-    height: 72px;
-
-    padding: 16px 20px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    
-    gap: 12px;
-
-    background: #FCFCFC;
-    border: 1px solid #F3F3F3;
-    border-radius: 8px;
-}
-.login-input-field input{
-    flex: 1;
-    
-    background: #FCFCFC;
-    border: none;
-
-    font-family: 'Nunito', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-}
-.login-input-field  img{
-    width: 17px;
-    height: 17px;
-}
-.login-input-field  input::placeholder{
-  color: #838AA3;
+.App-link {
+  color: #61dafb;
 }
 
-.login-input-field  input:focus{
-    outline: none;
-
-    transition: 0.4s;
-    margin-left: 7px;
-}
-label{
-  width: 59px;
-  height: 15px;
-
-  align-self: flex-start;
-
-  font-family: 'Nunito', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-
-  color: #838AA3;
-}
-
-
-
-
-::-webkit-scrollbar {
-    width: 20px;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
   }
-  ::-webkit-scrollbar-track {
-    background-color: transparent;
+  to {
+    transform: rotate(360deg);
   }
-  ::-webkit-scrollbar-thumb {
-    background-color: #d6dee1;
-    border-radius: 20px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background-color: #d6dee1;
-    border-radius: 20px;
-    border: 6px solid transparent;
-    background-clip: content-box;
-  }
+}
