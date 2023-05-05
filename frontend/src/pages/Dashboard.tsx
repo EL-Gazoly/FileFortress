@@ -2,6 +2,7 @@ import React from 'react'
 import BurgerIcon from '../assets/BurgerIcon.svg'
 import SearchIcon from '../assets/SearchIcon.svg'
 import BottomArrow from '../assets/BottomArrow.svg'
+import CloudIcon from '../assets/CloudIcon.svg'
 
 const Dashboard = () => {
   return (
@@ -10,7 +11,8 @@ const Dashboard = () => {
             
 
       </div>
-        <div className="right order-1 lg:order-2 h-full w-full bg-bg flex flex-col">
+        <div className="right order-1 lg:order-2 h-full w-full bg-bg flex flex-col gap-y-4">
+            
             <div className="header flex flex-row mt-5 px-2 justify-between">
 
 
@@ -45,6 +47,22 @@ const Dashboard = () => {
                             </div>
                 </div>
             </div>
+
+            <div className="body flex flex-col mt-4">
+                <div className="first-row flex flex-row justify-between items-center px-9">
+                    <div className="left font-roboto font-semibold">
+                        Dashboard
+                    </div>
+                    <div className="right">
+                        <button className=" w-20  h-8 bg-secondary flex flex-row items-center justify-center rounded-lg gap-x-1">
+                            <span className=' text-white font-poppins text-xs'>Upload</span>
+                            <img src={CloudIcon} alt="Cloud Icon" className="w-5 h-5" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            
 
         </div>
     </div>
