@@ -3,6 +3,7 @@ import BurgerIcon from '../assets/BurgerIcon.svg'
 import SearchIcon from '../assets/SearchIcon.svg'
 import BottomArrow from '../assets/BottomArrow.svg'
 import CloudIcon from '../assets/CloudIcon.svg'
+import UplaodIcon from '../assets/UploadIcon.svg'
 
 const Dashboard = () => {
   return (
@@ -48,8 +49,8 @@ const Dashboard = () => {
                 </div>
             </div>
 
-            <div className="body flex flex-col mt-4">
-                <div className="first-row flex flex-row justify-between items-center px-9">
+            <div className="body flex flex-col mt-4 gap-y-4 ">
+                <div className="first-row flex flex-row justify-between items-center px-2">
                     <div className="left font-roboto font-semibold">
                         Dashboard
                     </div>
@@ -59,6 +60,18 @@ const Dashboard = () => {
                             <img src={CloudIcon} alt="Cloud Icon" className="w-5 h-5" />
                         </button>
                     </div>
+                </div>
+
+                <div className="second-row flex flex-row px-2">
+                    <div className="left flex flex-col text-left w-48 gap-y-3">
+                        <div className="left-top font-sans font-semibold text-sm"> Welcome back Gazoly</div>
+                        <div className="left-bottom font-poppins text-[11px] text-subBlack">Unleash the power of your data with seamless cloud storage integration it&apos;s secure scalable  and hassle-free</div>
+                    </div>
+                    <div className="right">
+                        <img src={UplaodIcon} alt="Upload Icon" className= " w-44 h-40 pb-5 " />
+
+                    </div>
+
                 </div>
             </div>
             
