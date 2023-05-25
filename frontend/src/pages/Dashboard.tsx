@@ -4,6 +4,7 @@ import SearchIcon from '../assets/SearchIcon.svg'
 import BottomArrow from '../assets/BottomArrow.svg'
 import CloudIcon from '../assets/CloudIcon.svg'
 import UplaodIcon from '../assets/UploadIcon.svg'
+import FolderCard from '../components/FolderCard'
 
 const Dashboard = () => {
   return (
@@ -49,7 +50,7 @@ const Dashboard = () => {
                 </div>
             </div>
 
-            <div className="body flex flex-col mt-4 gap-y-4 ">
+            <div className="body flex flex-col mt-4 gap-y-2 ">
                 <div className="first-row flex flex-row justify-between items-center px-2">
                     <div className="left font-roboto font-semibold">
                         Dashboard
@@ -73,6 +74,15 @@ const Dashboard = () => {
                     </div>
 
                 </div>
+
+                <div className="third-row flex flex-row px-2">
+                    <h1 className=' font-roboto font-semibold'>Folders</h1>
+                </div>
+
+                <div className="fourth-row flex flex-row px-2 gap-x-2">
+                    <FolderCard />
+                </div>
+                
             </div>
             
             

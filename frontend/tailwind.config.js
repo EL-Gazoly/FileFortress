@@ -15,7 +15,8 @@ module.exports = {
         primary: '#121432',
         blueGray: '#A8ACBF',
         subBlack: '#4C4D4C',
-        secondary: '#6672FB'
+        secondary: '#6672FB',
+        folderBg: '#D9D9D9'
       }
     },
   },
